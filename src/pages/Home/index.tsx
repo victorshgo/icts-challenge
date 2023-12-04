@@ -48,7 +48,7 @@ export const Home = () => {
           <Formik
             initialValues={initial}
             validationSchema={schema}
-            onSubmit={async (values, { resetForm }) => {
+            onSubmit={async (_values, { resetForm }) => {
               await handleSubmit();
               resetForm();
             }}
